@@ -1,6 +1,6 @@
 task = input("Enter your task: ")
 priority = input("Priority (high/medium/low): ").lower
-time_bound = input("Is it time bound? (yes/no): ").lower
+time_bound = input("Is it time-bound? (yes/no): ").lower
 
 while priority not in ("high", "medium", "low"):                # To make sure the right argument is passed
     print("Please enter a valid priority: " )
