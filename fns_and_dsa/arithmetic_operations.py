@@ -1,16 +1,16 @@
-def perfrom_operation(num1, num2, operation = ("add", "substract", "multiply", "divide")):   
+def perfrom_operation(num1, num2, operation):
     match operation:
         case "add":
-            result = num1 + num2
-        case "substract":
-            result = num1 - num2
+            return num1 + num2
+        case "subtract":
+            return num1 - num2
         case "multiply":
-            result = num1 * num2
+            return num1 * num2
         case "divide":
             if num2 == 0:
-                print("Please enter a valid second number")
+                return "Please enter a valid second number"
             else:
-                result = num1 / num2
-    print(result)
-
-perfrom_operation(2,4,"multiply")
+                return num1 / num2
+        case _:
+            return "Error: Invalid operation"
+perfrom_operation(2,3,"add")
