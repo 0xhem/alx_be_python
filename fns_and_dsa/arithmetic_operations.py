@@ -1,4 +1,4 @@
-def perfrom_operation(num1, num2, operation):
+def perfrom_operation(num1,num2,operation):
     match operation:
         case "add":
             return num1 + num2
@@ -13,4 +13,3 @@ def perfrom_operation(num1, num2, operation):
                 return num1 / num2
         case _:
             return "Error: Invalid operation"
-perfrom_operation(2,3,"add")
