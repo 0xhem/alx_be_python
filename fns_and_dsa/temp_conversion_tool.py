@@ -21,4 +21,4 @@ elif degree == "F":
     c = convert_to_fahrenheit(temperature)
     print(f"{temperature}°F is {c}°C")
 else:
-    print("Invalid temperature. Please enter a numeric value")
+    print("Invalid temperature. Please enter a numeric value.")
